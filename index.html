@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vydel — La tournée, dans l’ordre que tu décides</title>
-  <meta name="description" content="Vydel aide les cabinets IDEL à partager la tournée, les transmissions, les alertes et les ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
+  <title>Vydel — App de tournée pour cabinets infirmiers libéraux (IDEL)</title>
+  <meta name="description" content="Vydel, l’app des cabinets infirmiers libéraux (IDEL) : tournée partagée, transmissions, alertes et ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
   <meta name="theme-color" content="#2C7A73">
   <link rel="canonical" href="https://vydel.fr/">
   <link rel="icon" href="images/favicon.ico" sizes="any">
@@ -13,31 +13,77 @@
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Vydel">
-  <meta property="og:title" content="Vydel — La tournée, dans l’ordre que tu décides">
-  <meta property="og:description" content="Vydel aide les cabinets IDEL à partager la tournée, les transmissions, les alertes et les ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
+  <meta property="og:title" content="Vydel — App de tournée pour cabinets infirmiers libéraux (IDEL)">
+  <meta property="og:description" content="Vydel, l’app des cabinets infirmiers libéraux (IDEL) : tournée partagée, transmissions, alertes et ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
   <meta property="og:url" content="https://vydel.fr/">
   <meta property="og:image" content="https://vydel.fr/images/og-image.png">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vydel — La tournée, dans l’ordre que tu décides">
-  <meta name="twitter:description" content="Vydel aide les cabinets IDEL à partager la tournée, les transmissions, les alertes et les ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
+  <meta name="twitter:title" content="Vydel — App de tournée pour cabinets infirmiers libéraux (IDEL)">
+  <meta name="twitter:description" content="Vydel, l’app des cabinets infirmiers libéraux (IDEL) : tournée partagée, transmissions, alertes et ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.">
   <meta name="twitter:image" content="https://vydel.fr/images/og-image.png">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vydel.fr/#org",
+      "name": "Orva Labs",
+      "url": "https://vydel.fr/",
+      "logo": "https://vydel.fr/images/logo-vydel.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Vydel"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vydel.fr/#site",
+      "name": "Vydel",
+      "url": "https://vydel.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://vydel.fr/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Vydel",
+      "url": "https://app.vydel.fr/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "fr-FR",
+      "description": "Vydel, l’app des cabinets infirmiers libéraux (IDEL) : tournée partagée, transmissions, alertes et ordonnances. Ce n’est pas un dossier médical. Essai gratuit de 14 jours.",
+      "offers": {
+        "@type": "Offer",
+        "price": "14.99",
+        "priceCurrency": "EUR",
+        "description": "Par mois et par cabinet, après 14 jours d’essai gratuit"
+      },
+      "publisher": {
+        "@id": "https://vydel.fr/#org"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="has-cover">
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="/">
         <img src="images/logo-vydel.png" width="40" height="40" alt="Logo Vydel">
         <span>Vydel</span>
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" autocomplete="off">
       <label class="nav-burger" for="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="index.html#fonctions">Fonctionnalités</a>
-        <a href="index.html#offre">Offre</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="/#fonctions">Fonctionnalités</a>
+        <a href="/#offre">Offre</a>
+        <a href="/#faq">FAQ</a>
         <a class="btn" href="https://app.vydel.fr/" data-vydel-app>Tester Vydel 14 jours</a>
       </nav>
     </div>
@@ -155,7 +201,7 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="brand" href="index.html">
+        <a class="brand" href="/">
           <img src="images/logo-vydel.png" width="40" height="40" alt="">
           <span>Vydel</span>
         </a>
