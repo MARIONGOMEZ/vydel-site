@@ -1,6 +1,5 @@
-/* URL réelle de l’application Vydel, à brancher quand l’essai sera ouvert.
-   window.VYDEL_APP_URL = "https://app.vydel.fr/";
-   Ne pas poser ce href tant que les boutons restent « Bientôt disponible ». */
+/* URL réelle de l’application Vydel (essai de 14 jours ouvert). */
+window.VYDEL_APP_URL = "https://app.vydel.fr/";
 
 /* Aperçu multi-cabinet : ce flux n’est pas encore en ligne (app v1.99.1).
    La section d’accueil est déjà libellée « Bientôt ».
@@ -9,8 +8,9 @@
 window.VYDEL_SHOW_MULTICAB_PREVIEW = true;
 
 (function () {
-  /* Les boutons d’essai sont désactivés (« Bientôt disponible ») :
-     on ne pose plus de href. */
+  /* Boutons « Tester Vydel 14 jours » : href depuis VYDEL_APP_URL. */
+  var appLinks = document.querySelectorAll("[data-vydel-app]");
+  for (var i = 0; i < appLinks.length; i++) appLinks[i].setAttribute("href", window.VYDEL_APP_URL);
   if (!window.VYDEL_SHOW_MULTICAB_PREVIEW) {
     var preview = document.getElementById("apercu-cabinets");
     if (preview) preview.classList.add("is-hidden");
