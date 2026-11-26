@@ -1,6 +1,6 @@
 /* URL réelle de l’application Vydel (essai de 14 jours ouvert). */
 window.VYDEL_APP_URL = "https://app.vydel.fr/";
-/* Boutons « Tester Vydel 14 jours » : le lien d’essai unique, le même que « Offrir un essai » dans l’appli. */
+/* Boutons « Proposer l’essai 14 jours » : le lien d’essai unique, le même que dans l’appli. */
 window.VYDEL_ESSAI_URL = "https://app.vydel.fr/essai";
 
 /* Aperçu multi-cabinet : ce flux n’est pas encore en ligne (app v1.99.1).
@@ -10,7 +10,7 @@ window.VYDEL_ESSAI_URL = "https://app.vydel.fr/essai";
 window.VYDEL_SHOW_MULTICAB_PREVIEW = true;
 
 (function () {
-  /* Boutons « Tester Vydel 14 jours » : href depuis VYDEL_ESSAI_URL. */
+  /* Boutons « Proposer l’essai 14 jours » : href depuis VYDEL_ESSAI_URL. */
   var appLinks = document.querySelectorAll("[data-vydel-app]");
   for (var i = 0; i < appLinks.length; i++) appLinks[i].setAttribute("href", window.VYDEL_ESSAI_URL);
   if (!window.VYDEL_SHOW_MULTICAB_PREVIEW) {
