@@ -2,6 +2,8 @@
 window.VYDEL_APP_URL = "https://app.vydel.fr/";
 /* Boutons « Proposer l’essai 14 jours » : le lien d’essai unique, le même que dans l’appli. */
 window.VYDEL_ESSAI_URL = "https://app.vydel.fr/essai";
+/* Résiliation : lien de connexion du portail client Stripe (billing.stripe.com/p/login/…). À remplacer par la vraie URL avant publication. */
+window.STRIPE_PORTAL_URL = "";
 
 /* Aperçu multi-cabinet : ce flux n’est pas encore en ligne (app v1.99.1).
    La section d’accueil est déjà libellée « Bientôt ».
@@ -13,6 +15,12 @@ window.VYDEL_SHOW_MULTICAB_PREVIEW = true;
   /* Boutons « Proposer l’essai 14 jours » : href depuis VYDEL_ESSAI_URL. */
   var appLinks = document.querySelectorAll("[data-vydel-app]");
   for (var i = 0; i < appLinks.length; i++) appLinks[i].setAttribute("href", window.VYDEL_ESSAI_URL);
+  /* Bouton « Résilier mon abonnement » : portail client Stripe */
+  var portal = document.querySelectorAll("[data-stripe-portal]");
+  for (var j = 0; j < portal.length; j++) {
+    if (/^https:\/\/billing\.stripe\.com\//.test(window.STRIPE_PORTAL_URL || "")) portal[j].setAttribute("href", window.STRIPE_PORTAL_URL);
+    else { portal[j].setAttribute("aria-disabled", "true"); portal[j].removeAttribute("href"); var ind = document.getElementById("resilier-indispo"); if (ind) ind.hidden = false; }
+  }
   if (!window.VYDEL_SHOW_MULTICAB_PREVIEW) {
     var preview = document.getElementById("apercu-cabinets");
     if (preview) preview.classList.add("is-hidden");
