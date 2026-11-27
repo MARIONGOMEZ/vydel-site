@@ -29,7 +29,7 @@ Le site tutoie le lecteur, comme validé.
 | `essai.html` | Page d’invitation : essai annoncé, bouton « Bientôt disponible » |
 | `mentions-legales.html` | Mentions légales (contact : contact@vydel.fr) |
 | `confidentialite.html` | Confidentialité relue (faits, sans promesse non vérifiée) |
-| `cgu.html` | Rappel de l’offre ; le texte complet des CGU n’est pas encore publié |
+| `cgu.html` | Conditions d’utilisation (texte complet) |
 | `css/styles.css` | Charte (teal, typo système) |
 | `js/config.js` | URL de l’app et drapeau d’aperçu multi-cabinet |
 | `images/` | Logo PNG, favicons, image Open Graph, aperçus |
@@ -52,7 +52,6 @@ Les boutons d’essai sont désactivés, non cliquables, et ne pointent vers auc
 - Règlement via un **lien de paiement en ligne** (ne pas écrire « Revolut » ni « Revolut Business »)
 - Accès débloqué **automatiquement** après le paiement
 - Fin d’essai : avertissement à **J-2** (pas J-3), puis travail bloqué, « Télécharger mes données » pendant 30 jours, ensuite accès entièrement bloqué
-- Le texte complet des CGU n’est pas encore publié ; `cgu.html` rappelle l’essentiel de l’offre, sans s’y substituer
 
 ```mermaid
 flowchart TD
@@ -100,7 +99,6 @@ Déjà confirmé et écrit :
 
 **Encore à décider par Fabien :**
 
-- Texte définitif des CGU (`cgu.html` n’en a qu’un rappel)
 - URL réelle de l’application (`VYDEL_APP_URL` reste en commentaire tant que l’essai n’est pas ouvert)
 - Comptes TikTok et Instagram (identifiants proposés à vérifier, dans l’ordre : `vydel`, `vydel.app`, `vydel.idel`, `vydel.officiel`). Les liens ne sont plus affichés tant que les comptes n’existent pas. Pas de Facebook.
 - Confirmation de l’hébergeur : mentions GitHub Pages formalisées, sous réserve de la mise en ligne et du feu vert (voir aussi la zone grise des conditions d’usage de Pages, dans `NOTES-PREPARATION.md`)
