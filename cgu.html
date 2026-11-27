@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conditions d’utilisation — Vydel</title>
-  <meta name="description" content="Conditions d’utilisation de Vydel : l’essentiel de l’offre (essai gratuit de 14 jours, tarif par cabinet). Le texte complet sera publié sur cette page.">
+  <meta name="description" content="Conditions d’utilisation de Vydel : ce qu’est l’application (pas un dossier médical), chiffrement, photos de documents, essai gratuit de 14 jours et abonnement.">
   <meta name="theme-color" content="#2C7A73">
   <link rel="canonical" href="https://vydel.fr/cgu.html">
   <link rel="icon" href="images/favicon.ico" sizes="any">
@@ -14,13 +14,13 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Vydel">
   <meta property="og:title" content="Conditions d’utilisation — Vydel">
-  <meta property="og:description" content="Conditions d’utilisation de Vydel : l’essentiel de l’offre (essai gratuit de 14 jours, tarif par cabinet). Le texte complet sera publié sur cette page.">
+  <meta property="og:description" content="Conditions d’utilisation de Vydel : ce qu’est l’application (pas un dossier médical), chiffrement, photos de documents, essai gratuit de 14 jours et abonnement.">
   <meta property="og:url" content="https://vydel.fr/cgu.html">
   <meta property="og:image" content="https://vydel.fr/images/og-image.png">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Conditions d’utilisation — Vydel">
-  <meta name="twitter:description" content="Conditions d’utilisation de Vydel : l’essentiel de l’offre (essai gratuit de 14 jours, tarif par cabinet). Le texte complet sera publié sur cette page.">
+  <meta name="twitter:description" content="Conditions d’utilisation de Vydel : ce qu’est l’application (pas un dossier médical), chiffrement, photos de documents, essai gratuit de 14 jours et abonnement.">
   <meta name="twitter:image" content="https://vydel.fr/images/og-image.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -47,7 +47,40 @@
     <div class="wrap">
       <article class="legal-body">
         <h1>Conditions d’utilisation</h1>
-        <p>Le texte complet des conditions d’utilisation n’est pas encore publié. En attendant, l’essentiel de l’offre est rappelé ici, sans s’y substituer&nbsp;:</p>
+        <p>Vydel est une <strong>checklist de passages</strong> pour IDEL. Ce n’est <strong>pas un dossier médical</strong> : pas de diagnostic, pas de pathologie, pas de notes cliniques. Uniquement le passage du jour.</p>
+        <p>Les fiches patients, transmissions et messages sont chiffrés sur les téléphones (AES-GCM 256 bits). L’échange entre associées n’envoie que des données chiffrées (voir « Chiffrement de vos données » ci-dessous). Le cabinet est responsable de qui connaît le PIN et de qui reçoit une invitation.</p>
+        <p>L’application web est un outil fourni en l’état, sans garantie médicale.</p>
+        <p>La reproduction de l’application ou de son code source sans autorisation est interdite.</p>
+        <p>L’utilisateur s’interdit de reproduire, capturer, photographier ou exporter les données patients à des fins de récupération de clientèle, notamment en cas de départ d’un groupe ou d’une association. Toute violation constitue une faute grave ouvrant droit à dommages-intérêts.</p>
+        <p>L’utilisateur reste seul responsable du respect du secret médical et de ses obligations professionnelles. L’éditeur ne saurait être tenu responsable des dommages indirects liés à l’utilisation de l’application.</p>
+        <h2 id="cgu-chiffrement">Chiffrement de vos données</h2>
+        <ul>
+          <li><strong>Chiffré sur le téléphone, avant tout envoi.</strong> Le chiffrement utilisé, AES-GCM 256 bits, est un standard reconnu, du niveau de celui des banques.</li>
+          <li><strong>Une clé secrète par cabinet.</strong> Chaque cabinet a sa propre clé, tirée au hasard par l’appli (32 octets). Elle ne dépend pas du PIN.</li>
+          <li id="cgu-pin-6"><strong>PIN de 6 chiffres requis à la création d’un nouveau cabinet.</strong> Les cabinets existants gardent leur PIN actuel.</li>
+          <li><strong>Le PIN protège la clé sur votre téléphone.</strong> Il ne sert qu’à ça. Pour qu’il soit très long à deviner, l’appli fait un calcul volontairement lent (600 000 tours), avec un « sel » aléatoire propre à chaque téléphone.</li>
+          <li><strong>Pas de compte.</strong> Pour partager la tournée entre téléphones, l’appli passe par des relais publics. Ils ne voient que du texte chiffré, illisible sans la clé. Seules les photos de documents sont aussi gardées sur un serveur de stockage, chiffrées sur le téléphone (voir « Photos de documents »).</li>
+          <li><strong>Le brouillon aussi.</strong> Une fiche patient en cours de saisie est gardée chiffrée sur le téléphone, même si l’appli est fermée ; elle est effacée une fois la fiche enregistrée ou annulée. Hors ligne, les changements attendent sur le téléphone, chiffrés, et partent au retour du réseau.</li>
+        </ul>
+        <p><strong>Ce que le chiffrement ne couvre pas :</strong></p>
+        <ul>
+          <li>La « Question SAV » part par e-mail <strong>non chiffré</strong> : n’y mettez aucun nom ni information sur un patient.</li>
+          <li>Pour placer les patients sur la carte, l’appli envoie l’adresse seule, sans nom, à un service de cartographie (Photon). « Y aller » transmet l’adresse seule à l’appli GPS choisie.</li>
+          <li>Un téléphone ouvert dans l’appli affiche les données : verrouillez-le et ne le prêtez pas.</li>
+          <li>Le PIN se donne en personne, jamais par message. Le lien d’invitation s’envoie uniquement à la bonne personne ; chaque lien ne sert qu’une fois.</li>
+          <li><strong>PIN oublié : le code de récupération.</strong> À la création du cabinet, l’admin reçoit en main propre, sur son écran, un code de récupération (code de secours) de 24 caractères, affiché une seule fois. Il peut, s’il le souhaite, se l’envoyer par e-mail à sa propre adresse. Ce code permet de choisir un nouveau PIN sans perdre les données ; il est alors remplacé par un nouveau code. Chaque utilisation est notée dans l’historique du cabinet et signalée sur les autres téléphones. Sans PIN ni code de récupération, les données ne sont pas récupérables, pas même par l’éditeur. Gardez ce code à part du PIN, jamais au même endroit.</li>
+          <li>Lors du passage d’un cabinet existant à cette protection, une copie protégée à l’ancienne (par le seul PIN) reste au plus 14 jours, puis elle est effacée.</li>
+        </ul>
+        <h2 id="cgu-photos">Photos de documents</h2>
+        <ul>
+          <li><strong>Des documents seulement, jamais de patients.</strong> Accès ou clé, ordonnance, carte vitale.</li>
+          <li id="cgu-photos-partage"><strong>Partagées avec tous les membres du cabinet (associés et remplaçants).</strong> Elles sont chiffrées sur le téléphone, puis envoyées aux autres téléphones par des relais publics, qui ne les gardent pas, et par un serveur de stockage, qui en garde une copie chiffrée. Elles ne sont jamais en clair, ni sur les relais, ni sur ce serveur, ni dans le stockage des téléphones. Elles s’effacent automatiquement : à la fin de l’ordonnance pour une photo d’ordonnance, au bout de 90 jours pour les autres. L’accès est protégé par le PIN du cabinet et le contenu est chiffré sur le téléphone avec la clé du cabinet. Chaque téléphone du cabinet en garde une copie chiffrée. Un cabinet pas encore sécurisé les garde sur le seul téléphone qui les a prises.</li>
+          <li><strong>Gardées en ligne, chiffrées, pour les membres du cabinet.</strong> Une copie chiffrée de chaque photo est gardée sur un serveur de stockage (Cloudflare) : les membres du cabinet la reçoivent même si les téléphones qui l’ont sont éteints. Le serveur ne reçoit que des fichiers chiffrés sur le téléphone, sans nom de patient ni type de document : il ne peut pas les lire. La copie en ligne est effacée quand la photo est supprimée et, sinon, automatiquement à sa date d’effacement (pour une ordonnance dont la date de fin a été avancée, à l’ancienne date).</li>
+          <li><strong>Effacées automatiquement sur tous les téléphones.</strong> Une photo d’ordonnance reste jusqu’à la date de fin de l’ordonnance indiquée sur la fiche du patient (la plus tardive s’il y en a deux), puis elle est effacée ; si cette date est modifiée, l’effacement suit. Sans date de fin, elle est effacée au bout de 90 jours. Les photos d’accès ou de carte vitale sont effacées au bout de 90 jours, ou à la fin de l’ordonnance si elle arrive avant. Une photo supprimée l’est partout. Un téléphone resté éteint l’efface à sa prochaine ouverture.</li>
+          <li>Une capture d’écran ou une sauvegarde du téléphone échappe à cet effacement : évitez-les.</li>
+          <li>La carte vitale et l’ordonnance sont des données de santé : ne les photographiez que si c’est nécessaire.</li>
+        </ul>
+        <h2 id="cgu-essai">Essai gratuit et abonnement</h2>
         <ul>
           <li>Essai gratuit de 14&nbsp;jours.</li>
           <li>Puis 14,99&nbsp;€ par mois pour le cabinet, et 14,99&nbsp;€ par mois pour chaque associé, payés à Orva Labs. Le remplaçant est gratuit.</li>
@@ -55,6 +88,8 @@
           <li>À la fin de l’essai&nbsp;: avertissement à J-2, puis travail bloqué, téléchargement des données pendant 30&nbsp;jours, ensuite accès entièrement bloqué.</li>
         </ul>
         <p><a href="inscription.html">Voir le détail du parcours d’essai</a>.</p>
+        <p>En utilisant l’application Vydel, vous acceptez ces conditions.</p>
+        <p>© 2026 Orva Labs. Tous droits réservés.</p>
       </article>
     </div>
   </main>
