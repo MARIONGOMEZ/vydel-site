@@ -51,7 +51,7 @@ Les boutons d’essai sont désactivés, non cliquables, et ne pointent vers auc
 - Chaque associé paie 14,99 € par mois ; le remplaçant est gratuit
 - Règlement via un **lien de paiement en ligne** (ne pas écrire « Revolut » ni « Revolut Business »)
 - Accès débloqué **automatiquement** après le paiement
-- Fin d’essai : avertissement à **J-2** (pas J-3), puis travail bloqué, « Télécharger mes données » pendant 30 jours, ensuite accès entièrement bloqué
+- Fin d’essai : avertissement à **J-2** (pas J-3), puis travail bloqué, « Exporter mes données » pendant 30 jours, ensuite accès entièrement bloqué
 
 ```mermaid
 flowchart TD
@@ -62,7 +62,7 @@ flowchart TD
   E --> F{Paiement ?}
   F -->|Lien de paiement en ligne<br/>déblocage automatique| G[Accès abonné]
   F -->|Pas de paiement| H[Travail bloqué]
-  H --> I[Télécharger mes données<br/>disponible 30 jours]
+  H --> I[Exporter mes données<br/>disponible 30 jours]
   I --> J[Accès entièrement bloqué]
 ```
 
