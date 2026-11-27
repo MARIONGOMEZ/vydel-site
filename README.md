@@ -27,7 +27,7 @@ Le site tutoie le lecteur, comme validé.
 | `index.html` | Accueil : hero, problème, fonctions, fonctionnement, aperçu multi-cabinet (« Bientôt »), limites, offre, vie privée, FAQ, CTA |
 | `inscription.html` | « Ce qui se passe » — expliquant le parcours d’essai, sans formulaire |
 | `essai.html` | Page d’invitation : essai annoncé, bouton « Bientôt disponible » |
-| `mentions-legales.html` | Mentions légales (e-mail de contact encore à publier) |
+| `mentions-legales.html` | Mentions légales (contact : contact@vydel.fr) |
 | `confidentialite.html` | Confidentialité relue (faits, sans promesse non vérifiée) |
 | `cgu.html` | Rappel de l’offre ; le texte complet des CGU n’est pas encore publié |
 | `css/styles.css` | Charte (teal, typo système) |
@@ -96,10 +96,10 @@ Déjà confirmé et écrit :
 
 - « Vydel est édité par Orva Labs, Fabien Lavittola EI — SIRET 10959025700019 » (pied de chaque page, et corps des mentions légales)
 - Siège social : 7 impasse du Coulet, 06340 La Trinité
+- Contact : contact@vydel.fr
 
 **Encore à décider par Fabien :**
 
-- Adresse e-mail de contact (les pages disent pour l’instant qu’elle sera indiquée dès qu’elle sera publiée)
 - Texte définitif des CGU (`cgu.html` n’en a qu’un rappel)
 - URL réelle de l’application (`VYDEL_APP_URL` reste en commentaire tant que l’essai n’est pas ouvert)
 - Comptes TikTok et Instagram (identifiants proposés à vérifier, dans l’ordre : `vydel`, `vydel.app`, `vydel.idel`, `vydel.officiel`). Les liens ne sont plus affichés tant que les comptes n’existent pas. Pas de Facebook.
