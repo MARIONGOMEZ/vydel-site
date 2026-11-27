@@ -50,8 +50,7 @@ Les boutons d’essai sont désactivés, non cliquables, et ne pointent vers auc
 - Essai gratuit de 14 jours, puis 14,99 € par mois pour le cabinet
 - Chaque associé paie 14,99 € par mois ; le remplaçant est gratuit
 - Règlement via un **lien de paiement en ligne** (ne pas écrire « Revolut » ni « Revolut Business »)
-- Contrôle à la main à partir de la référence membre du cabinet affichée dans l’app
-- Accès débloqué **sous 24 h**, jamais « instantané »
+- Accès débloqué **automatiquement** après le paiement
 - Fin d’essai : avertissement à **J-2** (pas J-3), puis travail bloqué, « Télécharger mes données » pendant 30 jours, ensuite accès entièrement bloqué
 - Le texte complet des CGU n’est pas encore publié ; `cgu.html` rappelle l’essentiel de l’offre, sans s’y substituer
 
@@ -62,7 +61,7 @@ flowchart TD
   C --> D[Essai gratuit 14 jours]
   D --> E[Rappel à J-2]
   E --> F{Paiement ?}
-  F -->|Lien de paiement en ligne<br/>contrôle manuel via la référence membre<br/>déblocage sous 24 h| G[Accès abonné]
+  F -->|Lien de paiement en ligne<br/>déblocage automatique| G[Accès abonné]
   F -->|Pas de paiement| H[Travail bloqué]
   H --> I[Télécharger mes données<br/>disponible 30 jours]
   I --> J[Accès entièrement bloqué]
